@@ -1,0 +1,390 @@
+/* Homepage */
+body, html {
+    height: 100%;
+    margin: 0;
+    font-family: Arial, sans-serif; /* Ensure font is consistent */
+}
+
+.parallax {
+    background-image: url('images/Windows.jpg');
+    height: 500px;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+.content {
+    background-color: rgb(53, 29, 29); /* Semi-transparent color */
+    color: rgb(146, 30, 30); /* Ensure text is readable */
+    padding: 50px;
+    text-align: center;
+}
+
+body {
+    font-family: Times New Roman, sans-serif; /* If you want to change the body font, keep this here */
+    margin: 0;
+    padding: 0;
+    /* Remove or adjust background-color if necessary */
+    /* background-color: #000000; */
+}
+
+header {
+    background-color: #7cf01e; /* Black background */
+    color: rgb(30, 202, 14); /* Text color */
+    padding: 1rem;
+    text-align: center;
+    border-bottom: 2px solid rgb(0, 0, 0); /* Border color */
+}
+
+main {
+    display: flex;
+    padding: 2rem;
+}
+.center-image {
+    
+
+
+
+}
+.left-column {
+    width: 30%;
+    padding-right: 2rem;
+    border: 2px solid rgb(117, 22, 22); /* Border color */
+    border-radius: 10px; /* Rounded corners */
+    padding: 1rem; /* Padding inside border */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Shadow */
+}
+
+.left-column ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.left-column li {
+    position: relative;
+    margin-bottom: 20px;
+}
+
+.hover-content {
+    display: none;
+    margin-top: 10px;
+    transition: max-height 0.3s ease-out, opacity 0.3s ease-out;
+    max-height: 0;
+    overflow: hidden;
+    opacity: 0;
+}
+
+.left-column li:hover .hover-content {
+    display: block;
+    max-height: 100px; /* Adjust as needed */
+    opacity: 1;
+}
+
+.right-column {
+    width: 70%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+h1 {
+    text-align: center;
+    color: #30eb0b; /* Text color */
+}
+
+h2 {
+    color: #1abe3d; /* Subheading color */
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+li {
+    background-color: #55c216; /* List item background color */
+    margin: 1rem 0;
+    padding: 1rem;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(27, 218, 10, 0.1);
+    margin-bottom: 2rem; /* Vertical space between list items */
+}
+
+
+a {
+    text-decoration: none;
+    color: #1bc71b; /* Link color */
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+.headshot {
+    border-radius: 50%; /* Circular border radius */
+    width: 150px;
+    height: 150px; /* Fixed typo */
+    object-fit: cover;
+    margin-bottom: 3rem;
+}
+
+.about {
+    width: 100%;
+    text-align: center;
+}
+        .headshot {
+            width: 10px; /* Adjust the size as needed */
+            height: 10px; /* Ensures the image is square */
+            border: 2px solid #7c1616; /* Adds a border */
+            object-fit: scale-down; /* Ensures the image covers the entire area */
+            border-radius: 0; /* Ensures the image has square corners */
+        }
+					<img src="images/carl.jpg" alt="John Smith Headshot" class="headshot">
+
+    </style>
+
+	</body>
+</head>
+<style>
+nav {
+    display: flex;
+}
+
+.btn {
+    background-color: #000000; /* Blue background */
+    color: white; /* White text */
+    border: none;
+    padding: 10px 20px; /* Padding for the button */
+    margin: 0 5px; /* Space between buttons */
+    border-radius: 5px; /* Rounded corners */
+    cursor: pointer; /* Pointer cursor on hover */
+    font-size: 16px; /* Font size for buttons */
+}
+
+.btn:hover {
+    background-color: #000000; /* Darker blue on hover */
+}
+</style>
+<style> /* writing excerpt */
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f5f5f5;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+        }
+        .container {
+            background-color: #fff;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            border-radius: 8px;
+            max-width: 800px;
+            overflow: hidden;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        .image-container {
+            width: 50%;
+            aspect-ratio: 4 / 5;
+            overflow: hidden;
+        }
+        .image-container img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+        .content {
+            padding: 20px;
+            text-align: center;
+        }
+        .content h1 {
+            margin-top: 0;
+        }
+        .content p {
+            color: #555;
+            line-height: 1.6;
+        }
+    
+	
+	
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+        
+        header {
+            background-color: #f8f9fa;
+            padding: 20px;
+            text-align: center;
+            border-bottom: 1px solid #e2e2e2;
+        }
+        
+        .left-column, .right-column {
+            padding: 20px;
+        }
+        
+        .left-column {
+            width: 30%;
+            float: left;
+        }
+        
+        .right-column {
+            width: 70%;
+            float: right;
+        }
+        
+        .headshot {
+            width: 100%;
+            height: auto;
+        }
+        
+        .about {
+            margin-top: 20px;
+        }
+        
+        .blog {
+            margin-top: 20px;
+        }
+        
+        .blog-entries {
+            display: flex;
+            justify-content: space-between;
+        }
+        
+        .blog-entry {
+            width: 30%;
+            border: 1px solid #b60606;
+            border-radius: 4px;
+            overflow: hidden;
+            text-align: center;
+        }
+        
+        .blog-entry img {
+            width: 100%;
+            height: auto;
+        }
+        
+        .blog-entry a {
+            display: block;
+            padding: 10px;
+            background-color: #f8f9fa;
+            color: #007BFF;
+            text-decoration: none;
+            border-top: 1px solid #ccc;
+        }
+        
+        .blog-entry a:hover {
+            background-color: #e2e2e2;
+        }
+        
+        
+        
+
+
+<style>
+.left-column ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.left-column li {
+    position: relative;
+    margin-bottom: 20px;
+}
+
+.hover-content {
+    display: none;
+    margin-top: 10px;
+    transition: max-height 0.3s ease-out, opacity 0.3s ease-out;
+    max-height: 0;
+    overflow: hidden;
+    opacity: 0;
+}
+
+.left-column li:hover .hover-content {
+    display: block;
+    max-height: 100px; /* Adjust as needed */
+    opacity: 1;
+}
+
+/* Link styles */
+.left-column a {
+    color: blue; /* Default link color */
+    text-decoration: none; /* Remove underline */
+    padding: 5px; /* Add some padding to make the hover area larger */
+    background-color: black; /* Default background color */
+    display: inline-block; /* Ensures background color covers the area */
+}
+
+.left-column a:hover {
+    color: red; /* Link color on hover */
+    background-color: rgb(255, 255, 255); /* Background color on hover */
+}
+
+.left-column a:active {
+    color: green; /* Link color when active/clicked */
+}
+
+.left-column a:visited {
+    color: purple; /* Link color after being visited */
+}
+
+
+body, html {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+}
+
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
+
+.footer-content {
+    max-width: 1000px;
+    margin: auto;
+}
+
+.footer-content p {
+    margin: 0;
+    padding: 0;
+}
+
+.footer-content ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+}
+
+.footer-content ul li {
+    margin: 0 10px;
+}
+
+.footer-content ul li a img {
+    width: 24px;
+    height: 24px;
+    filter: invert(1); /* Inverts the color of the icons to white */
+}
+
+#counter {
+    position: bottom,;
+    top: 500px;
+    left: 500px;
+    /* You can adjust the values as needed */
+}
+
+
+
+
+</style>

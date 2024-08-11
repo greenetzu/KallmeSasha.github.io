@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AWP</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="parallax"></div>
+    <div class="content">
+        <h1>Welcome!</h1>
+        <p>Here is what I am and do.</p>
+    </div>
+    <div class="parallax"></div>
+</body>
+
+<body>
+    <header>
+        <h1>AWP</h1>
+       
+        <nav>
+            <a href="about.html" class="btn">About</a>
+            <a href="resume.html" class="btn">Resume</a>
+        </nav>
+    
+    </header>
+    <main>
+        <div id="content"></div>
+        
+        <div class="left-column">
+            <h2>Stories</h2>
+            <ul>
+                <li>
+                    <a href="writingexcerpt1.html" target="_blank">Bertrand and Russell</a>
+                    <div class="hover-content">A story about a Wizard and his reluctant apprentice.</div>
+                </li>
+                <li>
+                    <a href="writingexcerpt2.html" target="_blank">Untitled</a>
+                    <div class="hover-content">Two young adventurers caught up in conspiracy that threatens a town.</div>
+                </li>
+                
+                <p>Scripts</p>
+                <li>
+                    <a href="writingexcerpt3.html" target="_blank">The Comics</a>
+                    <div class="hover-content">A group of friends attempt to write and produce a TV show.</div>
+                </li>
+                <li>
+                    <a href="writingexcerpt4.html" target="_blank">The Radio</a>
+                    <div class="hover-content">Two roommates trapped inside their antique radio.</div>
+                </li>
+                
+                <p>Short Stories</p>
+                <li>
+                    <a href="writingexcerpt5.html" target="_blank">Monetas Crossing</a>
+                    <div class="hover-content">A young girl and her friends find more then they're expecting during a walk in the woods</div>
+                </li>
+                <li>
+                    <a href="writingexcerpt5.html" target="_blank">Monetas Crossing</a>
+                    <div class="hover-content">A young girl and her friends find more then they're expecting during a walk in the woods</div>
+                </li>
+            </ul>
+        </div>
+        <script src="websitejava.js"></script> <!-- Link to external JavaScript file -->
+        
+        <div class="right-column">
+            <div class="center-image">
+            <img src="images/frontpage.jpg" alt="A beautiful man">            
+            </div>
+            <div class="blog">
+                <h2>Recent Entries</h2>
+                <div class="blog-entries">
+                    <div class="blog-entry">
+                        <img src="images/dinnertonight.jpeg" alt="Description of the image">
+                        <a href="blog1.html">The rise and fall of the roman empire</a>
+                    </div>
+                    <div class="blog-entry">
+                        <img src="images/previousjob.jpeg" alt="Description of the image">
+                        <a href="blog2.html">How to win friends and influence people</a>
+                    </div>
+                    <div class="blog-entry">
+                        <<img src="images/whatitis.png" alt="Description of the image">
+                        <a href="blog3.html">Ask not what your country can do for you. Ask what can you do for your country.</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+               
+        </div>
+    </main>
+    <footer>
+        <div class="footer-content">
+            <p>&copy; 2024 AWP. All rights reserved.</p>
+            <ul class="socials">
+                <li><a href=""><img src="images/twitter.png" alt=""></a></li>
+                <li><a href=""><img src="images/linkedin.png" alt=""></a></li>
+                <li><a href="https://github.com/yourprofile"><img src="images/github.png" alt=""></a></li>
+            </ul>
+        </div>
+    </footer>
+
+    <head>
+        <meta charset="UTF-8">
+        <title>Visit Counter</title>
+        <script>
+            function updateCounter() {
+                if (localStorage.getItem('visitCount')) {
+                    let visitCount = parseInt(localStorage.getItem('visitCount'));
+                    visitCount++;
+                    localStorage.setItem('visitCount', visitCount);
+                    document.getElementById('counter').innerText = 'Visit Count: ' + visitCount;
+                } else {
+                    localStorage.setItem('visitCount', 1);
+                    document.getElementById('counter').innerText = 'Visit Count: 1';
+                }
+            }
+        </script>
+    </head>
+    <body onload="updateCounter()">
+        
+        <p id="counter">Visit Count: 0</p>
+    </body>
+
+
+
+</body>
+</html>
